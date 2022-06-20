@@ -1,0 +1,135 @@
+.photo-card {
+    background-color: #1d3e81;
+    color: #E8EFF0;
+    padding: 0.5rem 2rem 1.5rem 2rem;
+    border-radius: 2rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.photo-card a {
+    color: #E8EFF0;
+}
+.photo-card img {
+    width: 100%;
+}
+
+.photo-card p {
+    text-align: justify;
+}
+
+.photo-card .content {
+    display: block;
+    text-align: center;
+}
+
+/* Your code here */
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+    .photo-card h3, .photo-card a {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .photo-card a {
+        padding-top: 5px;
+    }
+
+    .photo-card .content {
+        display: flex;
+    }
+
+    .content p {
+        margin-left: 15px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+
+    .photo-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .photo-card {
+        display: flex;
+        flex-direction: column;
+
+        width: 40%;
+
+        margin: 0 1% 1%;
+    }
+
+    .photo-card img {
+        max-width: 95%;
+        height: auto;
+    }
+
+    .hc {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1500px) {
+    .photo-container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .photo-card h3, .photo-card a {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .photo-card a {
+        padding-top: 5px;
+    }
+
+    .photo-card .content {
+        display: flex;
+    }
+
+    .photo-card {
+        width: 45%;
+        margin: 0 5px;
+    }
+
+    .content p {
+        margin-left: 15px;
+    }
+}
+
+@media print {
+    .photo-card h3, .photo-card img{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .photo-card img {
+        padding-bottom: 5px;
+    }
+
+    .photo-card .content {
+        display: flex;
+    }
+
+    .content p {
+        margin-left: 15px;
+    }
+
+    h1, h2, a {
+        display: none;
+    }
+
+    html {
+        max-height: 100%;
+    }
+
+}
